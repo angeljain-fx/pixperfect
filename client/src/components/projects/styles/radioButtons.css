@@ -1,0 +1,172 @@
+@media (max-width: 576px) {
+  .rad-container {
+    padding-left: 14px;
+  }
+  .radio-checkmark{
+    margin: 1px 5px;
+    height: 19px;
+    width: 19px;
+  }
+}
+
+@media (min-width: 576px) {
+  .rad-container {
+    padding-left: 35px;
+  }
+  .radio-checkmark{
+    height: 19.25px;
+    width: 19.25px;
+  }
+}
+
+.rad-container {
+  display: flex;
+  position: relative;
+  align-items: center;
+  background: #f5f9ff;
+  border: 3px solid #f5f9ff;
+  min-height: 50px;
+  border-radius: 2.5px;
+  box-sizing: border-box;
+  margin-bottom: 12px;
+  margin-top: 12px;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+
+
+.rad-container:hover .radio-text {
+  color: blue;
+  transition: color .25s linear;
+}
+
+.rad-container:hover .radio-checkmark {
+  border: 2.5px solid #5685FF;
+  transition: border .25s linear;
+}
+
+.radio-input-def {
+  position: absolute;
+  display: none;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.radio-checkmark{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  background-color: #FFFFFF;
+  border: 2.5px solid #b5b8ff;
+  border-radius: 50%;
+  -webkit-box-shadow: 0px 1.25px 4px 0px rgba(50, 50, 50, 0.1);
+  -moz-box-shadow:    0px 1.25px 4px 0px rgba(50, 50, 50, 0.1);
+  box-shadow:         0px 1.25px 4px 0px rgba(50, 50, 50, 0.1);
+}
+
+.radio-text{
+  font-size: 16.5px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  margin-left: 25px;
+  color: #8b8dcc;
+}
+
+.radio-input-def:checked{
+  border: 3px solid #5685FF;
+}
+
+.radio-dot{
+  height: 8px;
+  width: 8px;
+  border-radius: 50%;
+  background: white;
+}
+
+#option-1:checked ~ .option-1,
+#option-2:checked ~ .option-2,
+#option-3:checked ~ .option-3,
+#option-4:checked ~ .option-4,
+#option-5:checked ~ .option-5,
+#standard-del:checked ~ .standard-del,
+#no-rush:checked ~ .no-rush,
+#happy-radio:checked ~ .team-mobile .deteam,
+#lovers-radio:checked ~ .team-mobile .pcteam,
+#option-6:checked ~ .toggle-content .option-6,
+#option-7:checked ~ .toggle-content .option-7,
+#option-8:checked ~ .toggle-content .option-8,
+#option-9:checked ~ .toggle-content .option-9,
+#option-10:checked ~ .toggle-content .option-10,
+#option-11:checked ~ .toggle-content .option-11,
+#option-12:checked ~ .toggle-content .option-12{
+  border: 3px solid #5685FF;
+  transition: border 0.35s ease-in-out;
+  background: #e6f0ff;
+}
+
+#option-1:checked ~ .option-1 .radio-checkmark,
+#option-2:checked ~ .option-2 .radio-checkmark,
+#option-3:checked ~ .option-3 .radio-checkmark,
+#option-4:checked ~ .option-4 .radio-checkmark,
+#option-5:checked ~ .option-5 .radio-checkmark,
+#no-rush:checked ~ .no-rush .radio-checkmark,
+#standard-del:checked ~ .standard-del .radio-checkmark,
+#happy-radio:checked ~ .team-mobile .deteam .radio-checkmark,
+#lovers-radio:checked ~ .team-mobile .pcteam .radio-checkmark,
+#option-6:checked ~ .toggle-content .option-6 .radio-checkmark,
+#option-7:checked ~ .toggle-content .option-7 .radio-checkmark,
+#option-8:checked ~ .toggle-content .option-8 .radio-checkmark,
+#option-9:checked ~ .toggle-content .option-9 .radio-checkmark,
+#option-10:checked ~ .toggle-content .option-10 .radio-checkmark,
+#option-11:checked ~ .toggle-content .option-11 .radio-checkmark,
+#option-12:checked ~ .toggle-content .option-12 .radio-checkmark{
+  border: 3px solid #5685FF;
+  transition: background 0.25s ease-in-out;
+}
+
+#option-1:checked ~ .option-1 .radio-text,
+#option-2:checked ~ .option-2 .radio-text,
+#option-3:checked ~ .option-3 .radio-text,
+#option-4:checked ~ .option-4 .radio-text,
+#option-5:checked ~ .option-5 .radio-text,
+#standard-del:checked ~ .standard-del .radio-text,
+#no-rush:checked ~ .no-rush .radio-text,
+#happy-radio:checked ~ .team-mobile .deteam .radio-text,
+#lovers-radio:checked ~ .team-mobile .pcteam .radio-text,
+#option-6:checked ~ .toggle-content .option-6 .radio-text,
+#option-7:checked ~ .toggle-content .option-7 .radio-text,
+#option-8:checked ~ .toggle-content .option-8 .radio-text,
+#option-9:checked ~ .toggle-content .option-9 .radio-text,
+#option-10:checked ~ .toggle-content .option-10 .radio-text,
+#option-11:checked ~ .toggle-content .option-11 .radio-text,
+#option-12:checked ~ .toggle-content .option-12 .radio-text{
+  color: blue;
+}
+
+#option-1:checked ~ .option-1 .radio-checkmark .radio-dot,
+#option-2:checked ~ .option-2 .radio-checkmark .radio-dot,
+#option-3:checked ~ .option-3 .radio-checkmark .radio-dot,
+#option-4:checked ~ .option-4 .radio-checkmark .radio-dot,
+#option-5:checked ~ .option-5 .radio-checkmark .radio-dot,
+#no-rush:checked ~ .no-rush .radio-checkmark .radio-dot,
+#standard-del:checked ~ .standard-del .radio-checkmark .radio-dot,
+#happy-radio:checked ~ .team-mobile .deteam .radio-checkmark .radio-dot,
+#lovers-radio:checked ~ .team-mobile .pcteam .radio-checkmark .radio-dot,
+#option-6:checked ~ .toggle-content .option-6 .radio-checkmark .radio-dot,
+#option-7:checked ~ .toggle-content .option-7 .radio-checkmark .radio-dot,
+#option-8:checked ~ .toggle-content .option-8 .radio-checkmark .radio-dot,
+#option-9:checked ~ .toggle-content .option-9 .radio-checkmark .radio-dot,
+#option-10:checked ~ .toggle-content .option-10 .radio-checkmark .radio-dot,
+#option-11:checked ~ .toggle-content .option-11 .radio-checkmark .radio-dot,
+#option-12:checked ~ .toggle-content .option-12 .radio-checkmark .radio-dot{
+  background: #5685FF;
+  transition: background 0.25s ease-in-out;
+}
+
+/*checked*/

@@ -1,0 +1,319 @@
+
+
+.menu-circle:hover {
+  cursor: pointer;
+}
+
+.menu-item,
+.menu-open-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  margin-top: 9px;
+  margin-bottom: 5px;
+  box-shadow: 0 0 5px rgba(161, 161, 161,0.3);
+  transition: box-shadow .7s;
+  z-index: 2;
+  background-color: #FFFFFF;
+  cursor: pointer;
+  position: absolute;
+  color: #FFFFFF;
+  text-align: center;
+  line-height: 80px;
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  -webkit-transition: -webkit-transform ease-out 200ms;
+  transition: -webkit-transform ease-out 200ms;
+  transition: transform ease-out 200ms;
+  transition: transform ease-out 200ms, -webkit-transform ease-out 200ms;
+  transition: background-color 0.5s;
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+
+.menu-open-button:hover {
+  box-shadow: 0 0 10px rgba(107, 107, 107,0.4);
+  cursor: pointer;
+  background-color: #5685FF;
+}
+
+.menu-open {
+   display: none;
+}
+
+.lines {
+   width: 25px;
+   height: 3px;
+   background: #5685FF;
+   display: block;
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   border-radius: 18.5%;
+   margin-left: -12.5px;
+   margin-top: -1.5px;
+   -webkit-transition: -webkit-transform 200ms;
+   transition: -webkit-transform 200ms;
+   transition: transform 200ms;
+   transition: transform 200ms, -webkit-transform 200ms;
+   transition: background-color 0.5s;
+}
+
+
+.menu-open-button:hover .lines{
+  background: white;
+  transition: -webkit-transform 200ms;
+  transition: transform 200ms;
+  transition: transform 200ms, -webkit-transform 200ms;
+}
+
+
+.line-1 {
+   -webkit-transform: translate3d(0, -8px, 0);
+   transform: translate3d(0, -8px, 0);
+}
+
+.line-2 {
+   -webkit-transform: translate3d(0, 0, 0);
+   transform: translate3d(0, 0, 0);
+}
+
+.line-3 {
+   -webkit-transform: translate3d(0, 8px, 0);
+   transform: translate3d(0, 8px, 0);
+}
+
+.menu-open:checked + .menu-open-button .line-1 {
+   -webkit-transform: translate3d(0, 0, 0) rotate(45deg);
+   transform: translate3d(0, 0, 0) rotate(45deg);
+}
+
+.menu-open:checked + .menu-open-button .line-2 {
+   -webkit-transform: translate3d(0, 0, 0) scale(0.1, 1);
+   transform: translate3d(0, 0, 0) scale(0.1, 1);
+}
+
+.menu-open:checked + .menu-open-button .line-3 {
+   -webkit-transform: translate3d(0, 0, 0) rotate(-45deg);
+   transform: translate3d(0, 0, 0) rotate(-45deg);
+}
+
+.burger-triangle {
+  width: 10px;
+  height: 10px;
+  background: white;
+  transform: rotate(45deg);
+  box-shadow: 0px 0px 3px rgba(0,0,0,0.20), 0px 2px 3px rgba(0,0,0,0.1);
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+  position: absolute;
+  top: 71.5px;
+  margin-left: 17.85px;
+  border: 1px solid #d1d1d1;
+}
+
+.drop-card {
+  background: #fff;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  height: 275px;
+  position: absolute;
+  transform: translateY(60.5px);
+  width: 300px;
+  padding: 10px;
+  border: 1px solid #d1d1d1;
+}
+
+.card-1 {
+  box-shadow: 0px 1px 6px rgba(0,0,0,0.15), 0px 6px 6px rgba(0,0,0,0.1);
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+
+.card-1:hover{
+  box-shadow: 0 5px 20px rgba(0,0,0,0.15), 0 5px 10px rgba(0,0,0,0.12);
+}
+
+.menu-shadow{
+  width: 45px;
+  height: 45px;
+  border-radius: 100%;
+  margin: 4.25px 0px;
+  position: absolute;
+  z-index: -2;
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+
+.card-1:hover + .menu-shadow{
+  box-shadow: 0 0px 20px rgba(0,0,0,0.08), 0 0px 10px rgba(0,0,0,0.05);
+}
+
+.dropcard-item1{
+  display: flex;
+  justify-content: centre;
+  text-decoration: none;
+  box-sizing: border-box;
+  align-items: center;
+  padding: 10px;
+  margin-bottom: 2px;
+  transition: background-color ease-in 0.2s;
+}
+
+.dropcard-item1:hover {
+  background-color: #f0f0f0;
+  border-radius: 2.5px;
+  transition: background-color ease-in 0.2s;
+  cursor: pointer;
+}
+
+.anim-bar-1{
+  width: 0px;
+  transition: width 0.15s;
+  height: 2.5px;
+  position: absolute;
+  display: flex;
+  background: #5685FF;
+  bottom: 0;
+  left: 0;
+  transform: translate(10.5px, -213.5px);
+  border-radius: 10px;
+}
+
+.anim-bar-2{
+  width: 0px;
+  transition: width 0.15s;
+  height: 2.5px;
+  position: absolute;
+  display: flex;
+  background: #5685FF;
+  bottom: 0;
+  left: 0;
+  transform: translate(10.5px, -161px);
+  border-radius: 10px;
+}
+
+.anim-bar-3{
+  width: 0px;
+  transition: width 0.15s;
+  height: 2.5px;
+  position: absolute;
+  display: flex;
+  background: #5685FF;
+  bottom: 0;
+  left: 0;
+  transform: translate(10.5px, -109.5px);
+  border-radius: 10px;
+}
+
+.anim-bar-4{
+  width: 0px;
+  transition: width 0.15s;
+  height: 2.5px;
+  position: absolute;
+  display: flex;
+  background: #5685FF;
+  bottom: 0;
+  left: 0;
+  transform: translate(10.5px, -57px);
+  border-radius: 10px;
+}
+
+.dropcard-item1:hover .anim-bar-1 {
+  width: 277.5px;
+}
+
+.dropcard-item1:hover .anim-bar-2 {
+  width: 277.5px;
+}
+
+.dropcard-item1:hover .anim-bar-3 {
+  width: 277.5px;
+}
+
+.dropcard-item1:hover .anim-bar-4 {
+  width: 277.5px;
+}
+
+.burger-dashboard{
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  font-size: 17.5px;
+  color: blue;
+  margin-left: 10px;
+}
+
+.i-enclose{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+  border: 2px solid #5685FF;
+  transition: margin-left ease-in 0.2s;
+}
+
+.dropcard-item1:hover .i-enclose{
+  margin-left: 7px;
+  transition: margin-left ease-in 0.2s;
+}
+
+.menu-divider{
+  opacity: 0.15;
+  background-color: #5685FF;
+  margin: 2px;
+}
+
+.burger-owner-container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 5px;
+}
+
+.hamCredContainer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 7.5px;
+  min-width: 80px;
+  height: 30px;
+  border: 1.75px solid #0085ff;
+  padding-bottom: 1px;
+  padding-left: 1px;
+  -webkit-box-shadow: 0px 0px 7.5px 0px rgba(0,255,253,0.83);
+  -moz-box-shadow: 0px 0px 7.5px 0px rgba(0,255,253,0.83);
+}
+
+.menu-owner{
+  font-size: 16px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  color: #0085ff;
+}
+
+.addCredHamburger{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  margin-right: 5px;
+  border-radius: 25px;
+  padding-bottom: 1px;
+  width: 125px;
+  height: 35px;
+  background-color: #0085ff;
+  font-size: 15px;
+  -webkit-box-shadow: 0px 0px 20px 2.5px rgba(50, 50, 50, 0.15);
+  -moz-box-shadow:    0px 0px 20px 2.5px rgba(50, 50, 50, 0.15);
+  box-shadow:         0px 0px 20px 2.5px rgba(50, 50, 50, 0.15);
+  transition: all 0.2s ease-in;
+}
+
+.addCredHamburger:hover {
+  color: #0085ff;
+  background-color: white;
+  border: 2.5px solid #0085ff;
+  transition: all 0.2s ease-in;
+}

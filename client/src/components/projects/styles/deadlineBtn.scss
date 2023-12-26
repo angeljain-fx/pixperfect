@@ -1,0 +1,71 @@
+
+.toggle2 {
+  margin-right: 7.5px;
+  &:before {
+    position: absolute;
+    left: -56px;
+    top: 30px;
+    font-size: 18px;
+    color: #fff;
+  }
+
+  &:after {
+    position: absolute;
+    right: -46px;
+    top: 30px;
+    font-size: 18px;
+    color: rgba(253, 15, 21, 0.31);
+  }
+
+  .deadlineBtnLabel {
+    position: relative;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-color: #FD1015;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: inset 0 0 2px 1px rgba(0, 0, 0, 0.1), 0px 9px 15px 0px #ef4247;
+    -webkit-tap-highlight-color: transparent;
+
+    &:before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      transition:width 0.2s cubic-bezier(0, -1.85, .27, 1.75);
+      height: 15px;
+      width: 15px;
+      background-color: #fd0f14;
+      border-radius: 5px;
+box-shadow: inset 0px 0px 0px 8px #fff;
+    }
+  }
+
+  #toggle25 {
+    display: none;
+
+    &:checked + .deadlineBtnLabel {
+      background-color: #57de72;
+     box-shadow:  inset 0 0 2px 1px rgba(0, 0, 0, 0.1), 0px 9px 15px 0px rgba(3, 132, 28, 0.5411764705882353);
+
+      &:before {
+        width: 5px;
+        background-color: #fff;
+      }
+    }
+  }
+}
+
+.on{
+  background-color: #6fc57c;
+  .toggle2 {
+    &:before{
+      color: rgba(62, 160, 81, 0.89);
+    }
+    &:after{
+      color: #fff;
+    }
+  }
+}

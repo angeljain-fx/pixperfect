@@ -1,0 +1,221 @@
+@media (max-width: 576px) {
+  .service{
+    display: none;
+  }
+  .progress-bar1-container{
+    display: flex;
+    width: 85vw; /*here*/
+    height: 50px;
+    background-color: #edf3ff;
+    border-radius: 15px 15px 0px 0px;
+    position: relative;
+    z-index: -10;
+    overflow: hidden;
+  }
+
+  .progress-content{
+    width: 85vw; /*here*/
+    height: 50px;
+    padding-right: 5px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .progress-flowbar1{
+    display: flex;
+    width: 21.25vw; /*here*/
+    height: 50px;
+    border-radius: 34.5px 60px 60px 0px;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(166,227,254,1) 0%, rgba(119,179,251,1) 67%);
+    position: absolute;
+    z-index: 2;
+    -webkit-box-shadow: 1px 0px 15px 0px rgba(50, 50, 50, 0.25);
+    -moz-box-shadow:    1px 0px 15px 0px rgba(50, 50, 50, 0.25);
+    box-shadow:         1px 0px 15px 0px rgba(50, 50, 50, 0.25);
+  }
+
+  .content-contain{
+    width: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+  }
+
+  .num-circle{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 22.5px;
+    height: 22.5px;
+    background: white;
+    border-radius: 100%;
+    margin-right: 0px;
+    color: #5685FF;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 12.5px;
+  }
+
+  .num-circle-four{
+    background-color: #dbe4ff;
+    color: #f2f6ff;
+  }
+
+  .notActivated{
+    color: #e0e0e0;
+  }
+
+}
+
+@media (min-width: 576px) and (max-width: 992px){
+  .progress-bar1-container{
+    display: flex;
+    width: 85vw;
+    height: 50px;
+    background-color: #edf3ff;
+    border-radius: 15px 15px 0px 0px;
+    position: relative;
+    z-index: -10;
+    overflow: hidden;
+  }
+
+  .progress-content{
+    width: 85vw;
+    height: 50px;
+    padding-right: 5px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .progress-flowbar1{
+    display: flex;
+    width: 21.25vw;
+    height: 50px;
+    border-radius: 34.5px 60px 60px 0px;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(166,227,254,1) 0%, rgba(119,179,251,1) 67%);
+    position: absolute;
+    z-index: 2;
+    -webkit-box-shadow: 1px 0px 15px 0px rgba(50, 50, 50, 0.25);
+    -moz-box-shadow:    1px 0px 15px 0px rgba(50, 50, 50, 0.25);
+    box-shadow:         1px 0px 15px 0px rgba(50, 50, 50, 0.25);
+  }
+
+  .service{
+    color: white;
+    font-family: 'Lato', sans-serif;
+    font-size: 17.5px;
+  }
+
+  .content-contain{
+    width: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+  }
+
+  .num-circle{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 22.5px;
+    height: 22.5px;
+    background: white;
+    border-radius: 100%;
+    margin-right: 10px;
+    color: #5685FF;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 12.5px;
+  }
+
+  .num-circle-four{
+    background-color: #dbe4ff;
+    color: #f2f6ff;
+  }
+
+  .notActivated{
+    color: #e0e0e0;
+  }
+
+}
+
+@media (min-width: 992px) {
+  .progress-bar1-container{
+    display: flex;
+    width: 60vw;
+    height: 50px;
+    background-color: #edf3ff;
+    border-radius: 15px 15px 0px 0px;
+    position: relative;
+    z-index: -10;
+    overflow: hidden;
+  }
+
+  .progress-content{
+    width: 60vw;
+    height: 50px;
+    padding-right: 5px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .progress-flowbar1{
+    display: flex;
+    width: 15vw;
+    height: 50px;
+    border-radius: 34.5px 60px 60px 0px;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(166,227,254,1) 0%, rgba(119,179,251,1) 67%);
+    position: absolute;
+    z-index: 2;
+    -webkit-box-shadow: 1px 0px 15px 0px rgba(50, 50, 50, 0.25);
+    -moz-box-shadow:    1px 0px 15px 0px rgba(50, 50, 50, 0.25);
+    box-shadow:         1px 0px 15px 0px rgba(50, 50, 50, 0.25);
+  }
+
+  .service{
+    color: white;
+    font-family: 'Lato', sans-serif;
+    font-size: 17.5px;
+  }
+
+  .content-contain{
+    width: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+  }
+
+  .num-circle{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 22.5px;
+    height: 22.5px;
+    background: white;
+    border-radius: 100%;
+    margin-right: 10px;
+    color: #5685FF;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 12.5px;
+  }
+
+  .num-circle-four{
+    background-color: #dbe4ff;
+    color: #f2f6ff;
+  }
+
+  .notActivated{
+    color: #e0e0e0;
+  }
+
+}

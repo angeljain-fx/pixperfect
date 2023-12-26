@@ -1,0 +1,104 @@
+@media (max-width: 992px){
+  .summary-container{
+    display: none;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+    .summary-container{
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      font-family: 'Lato', sans-serif;
+      width: 350px;
+      height: 350px;
+      border-radius: 15px;
+      border: 1px solid #cff0ff;
+      margin-left: 40px;
+      padding: 10px 20px;
+      -webkit-box-shadow: 3px 4.5px 20px 0px rgba(206, 206, 206, 0.93);
+      -moz-box-shadow:    3px 4.5px 20px 0px rgba(206, 206, 206, 0.93);
+      box-shadow:         3px 4.5px 20px 0px rgba(206, 206, 206, 0.93);
+    }
+
+    .summary-head{
+      font-family: 'Lato', sans-serif;
+      font-size: 22.5px;
+    }
+
+    .overview-divider{
+      display: block;
+      opacity: 0.25;
+      border-radius: 2px;
+      margin-bottom: 5px;
+    }
+
+    .fa-user-edit, .fa-tasks, .fa-sync-alt{
+      color: #5685FF;
+      font-size: 15.5px;
+      margin-right: 5px;
+    }
+
+    .slack-mod2{
+      margin-right: 5px;
+      color: #5685FF;
+      font-size: 16px;
+    }
+
+    .asset-pro-cont{
+      display: inline;
+      margin-top: -2.25px;
+      font-family: "Source Sans Pro", sans-serif;
+      font-size: 14px;
+    }
+
+}
+
+@media (min-width: 1200px) {
+  .summary-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    font-family: 'Lato', sans-serif;
+    width: 350px;
+    height: 350px;
+    border-radius: 15px;
+    border: 1px solid #cff0ff;
+    margin-left: 40px;
+    padding: 10px 20px;
+    -webkit-box-shadow: 3px 4.5px 20px 0px rgba(206, 206, 206, 0.93);
+    -moz-box-shadow:    3px 4.5px 20px 0px rgba(206, 206, 206, 0.93);
+    box-shadow:         3px 4.5px 20px 0px rgba(206, 206, 206, 0.93);
+  }
+
+  .summary-head{
+    font-family: 'Lato', sans-serif;
+    font-size: 27.5px;
+  }
+
+  .overview-divider{
+    display: block;
+    opacity: 0.25;
+    border-radius: 2px;
+  }
+
+  .fa-user-edit, .fa-tasks, .fa-sync-alt{
+    color: #5685FF;
+    font-size: 15.5px;
+    margin-right: 5px;
+  }
+
+  .slack-mod2{
+    margin-right: 5px;
+    color: #5685FF;
+    font-size: 16px;
+  }
+
+  .asset-pro-cont{
+    display: inline;
+    margin-top: -2.25px;
+    font-family: "Lato", sans-serif;
+    font-size: 16px;
+  }
+
+}

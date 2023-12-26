@@ -1,0 +1,261 @@
+@media (max-width: 576px) {
+  .projectCardCont{
+    width: 85vw;
+    padding: 13px 15px 15px 15px;
+  }
+  .cardTitle{
+    font-size: 20px;
+  }
+  .cardStatus{
+    font-size: 15px;
+    margin-top: -15px;
+    padding: 0px 2px 2px 2px;
+  }
+  .cardService{
+    font-size: 15px;
+  }
+  #card-slack-header{
+    font-size: 20px;
+  }
+  #fontInfo{
+    font-size: 20px;
+  }
+  .noProBox{
+    width: 80vw;
+  }
+  #pretty-empty{
+    font-size: 20px;
+  }
+  .slackInviteLink, .assetLink{
+    font-size: 12.5px;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 991px) {
+  .projectCardCont{
+      width: 80vw;
+      padding: 13px 20px 15px 20px;
+  }
+  .cardTitle{
+    font-size: 30px;
+  }
+  .cardStatus{
+    font-size: 17.5px;
+    margin-top: -22.5px;
+    padding: 0px 3px 3px 3px;
+  }
+  .cardService{
+    font-size: 17.5px;
+  }
+  .noProBox{
+    width: 80vw;
+  }
+  .slackInviteLink, .assetLink{
+    font-size: 15px;
+  }
+}
+
+@media (min-width: 991px) {
+  .projectCardCont{
+      width: 850px;
+      padding: 13px 20px 15px 20px;
+  }
+  .cardDivider{
+    width: 550px;
+  }
+  .cardTitle{
+    font-size: 30px;
+  }
+  .cardStatus{
+    font-size: 17.5px;
+    margin-top: -22.5px;
+    padding: 0px 3px 3px 3px;
+  }
+  .cardService{
+    font-size: 17.5px;
+  }
+  .noProBox{
+    width: 600px;
+  }
+  .slackInviteLink, .assetLink{
+    font-size: 15px;
+  }
+}
+
+.noProBox{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  min-height: 280px;
+  border-radius: 15px;
+  margin: 0px auto;
+  -webkit-box-shadow: 0px 5px 40px 0px rgba(50, 50, 50, 0.15);
+  -moz-box-shadow:    0px 5px 40px 0px rgba(50, 50, 50, 0.15);
+  box-shadow:         0px 5px 40px 0px rgba(50, 50, 50, 0.15);
+}
+
+.emptyDashSVG{
+  width: 160px;
+}
+
+.projectCardCont{
+  display: flex;
+  flex-direction: column;
+  min-height: 150px;
+  border-radius: 15px;
+  background-color: white;
+  margin: 15px auto 35px auto;
+  -webkit-box-shadow: 0px 5px 30px 0px rgba(50, 50, 50, 0.15);
+  -moz-box-shadow:    0px 5px 30px 0px rgba(50, 50, 50, 0.15);
+  box-shadow:         0px 5px 30px 0px rgba(50, 50, 50, 0.15);
+}
+
+.cardHeaderContainer{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.cardTitle{
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+.cardService{
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+}
+
+.cardSlackHeader{
+  font-family: "Lato", sans-serif;
+  font-size: 22.5px;
+}
+
+.slackAndAssetCont{
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  margin-bottom: 5px;
+  padding: 10px 15px 10px 15px;
+  box-shadow: 0px 0px 5px 0px rgba(86, 133, 255,0.5);
+  -webkit-box-shadow: 0px 0px 5px 0px rgba(86, 133, 255,0.5);
+  -moz-box-shadow: 0px 0px 5px 0px rgba(86, 133, 255,0.5);
+}
+
+.slackHeading{
+  color: purple;
+}
+
+.slackInviteLink{
+  display: block;
+  max-width: 100%;
+  word-break: break-all;
+  min-height: 32.5px;
+  border: 2.5px solid purple;
+  border-radius: 5px;
+  background-color: #fff5ff;
+  margin: 10px 0px 10px 0px;
+  padding: 3.5px 6px 5.5px 6px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Lato", sans-serif;
+  box-shadow: 0px 0px 5px 0px rgba(167, 92, 184,0.5);
+  -webkit-box-shadow: 0px 0px 5px 0px rgba(167, 92, 184,0.5);
+  -moz-box-shadow: 0px 0px 5px 0px rgba(167, 92, 184,0.5);
+}
+
+.fa-info-circle{
+  color: black;
+  margin-left: 5px;
+  font-size: 22.5px;
+  cursor: pointer;
+}
+
+.assetLink{
+  display: block;
+  max-width: 100%;
+  word-break: break-all;
+  min-height: 32.5px;
+  border: 2.5px solid #5685ff;
+  border-radius: 5px;
+  background-color: #fff5ff;
+  margin: 10px 0px 10px 0px;
+  padding: 3.5px 6px 5.5px 6px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Lato", sans-serif;
+  box-shadow: 0px 0px 5px 0px rgba(86, 133, 255,0.5);
+  -webkit-box-shadow: 0px 0px 5px 0px rgba(86, 133, 255,0.5);
+  -moz-box-shadow: 0px 0px 5px 0px rgba(86, 133, 255,0.5);
+}
+
+.cardStatus{
+  font-family: "Lato", sans-serif;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 5px;
+  color: #5685ff;
+  border: 2px solid #5685ff;
+}
+
+.statAndDate{
+  text-align: right;
+}
+
+.projectNumber{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Lato", sans-serif;
+  padding-bottom: 2px;
+  font-size: 17.5px;
+  width: 40px;
+  height: 40px;
+  border: 3px solid #5685ff;
+  box-shadow: 0px 0px 5px 1px rgba(201, 201, 201, 0.5);
+  -webkit-box-shadow: 0px 0px 5px 1px rgba(201, 201, 201, 0.5);
+  -moz-box-shadow: 0px 0px 5px 1px rgba(201, 201, 201, 0.5);
+}
+
+.cardToggler{
+  width: 200px;
+  height: 43px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Lato", sans-serif;
+  font-size: 17px;
+  box-shadow: 0px 0px 7.5px 1px rgba(201, 201, 201, 0.5);
+  -webkit-box-shadow: 0px 0px 7.5px 1px rgba(201, 201, 201, 0.5);
+  -moz-box-shadow: 0px 0px 7.5px 1px rgba(201, 201, 201, 0.5);
+}
+
+.fa-chevron-circle-down{
+  color: #5685ff;
+}
+
+.togglerContainer{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cardDivider{
+  height: 5px;
+  border-radius: 15px;
+  background-color: #5685ff;
+  margin-top: 12.5px;
+  box-shadow: 0px 0px 7.5px 1px rgba(201, 201, 201, 0.65);
+  -webkit-box-shadow: 0px 0px 7.5px 1px rgba(201, 201, 201, 0.65);
+  -moz-box-shadow: 0px 0px 7.5px 1px rgba(201, 201, 201, 0.65);
+}

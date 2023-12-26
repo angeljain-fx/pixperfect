@@ -1,0 +1,91 @@
+@media (max-width: 992px) {
+  .sl-container{
+    display: flex;
+    flex-direction: column;
+    width: 85vw; /*here*/
+    border-radius: 15px;
+    -webkit-box-shadow: 3px 4.5px 20px 0px rgba(206, 206, 206, 0.93);
+    -moz-box-shadow:    3px 4.5px 20px 0px rgba(206, 206, 206, 0.93);
+    box-shadow:         3px 4.5px 20px 0px rgba(206, 206, 206, 0.93);
+  }
+}
+@media (min-width: 992px) {
+  .sl-container{
+    display: flex;
+    flex-direction: column;
+    width: 60vw;
+    border-radius: 15px;
+    -webkit-box-shadow: 3px 4.5px 20px 0px rgba(206, 206, 206, 0.93);
+    -moz-box-shadow:    3px 4.5px 20px 0px rgba(206, 206, 206, 0.93);
+    box-shadow:         3px 4.5px 20px 0px rgba(206, 206, 206, 0.93);
+  }
+}
+
+
+.sl-form-container{
+  padding: 15px 20px;
+}
+
+.sl-heading{
+  font-family: 'Mukta', sans-serif;
+  font-size: 24px;
+}
+
+.sl-subheading{
+  font-family: 'Lato', sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  color: #9e9e9e;
+}
+
+.toggle-content {
+  display:none;
+}
+
+.ser-style{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  float: right;
+  width: 120px;
+  height: 40px;
+  background: white;
+  cursor: pointer;
+  border: 3px solid #5685FF;
+  border-radius: 3px;
+  font-family: 'Mukta', sans-serif;
+  outline:none;
+  -webkit-box-shadow: 0px 0px 5px 0.5px rgba(0,255,253,0.83);
+  -moz-box-shadow: 0px 0px 5px 0.5px rgba(0,255,253,0.83);
+  box-shadow:         0px 0px 5px 0.5px rgba(0,255,253,0.83);
+  transition: background 0.1s ease-in;
+}
+
+.ser-style:hover {
+  background: #0085ff;
+  border: 2.5px solid white;
+  color: white;
+  transition: background 0.1s ease-in;
+}
+
+.ex-ic{
+  margin-right: -9px;
+}
+
+.ser-contact{
+  position: relative;
+  float: left;
+  font-family: 'Mukta', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: #9e9e9e;
+  margin: 8px 0px 0px 5px;
+}
+
+.ser-link{
+  text-decoration: underline;
+  text-decoration-color: #5685FF;
+  text-decoration-thickness: 2.5px;
+  color: #2664ff;
+}
